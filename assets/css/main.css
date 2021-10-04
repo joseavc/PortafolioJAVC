@@ -1,0 +1,92 @@
+/* GLOBALES */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/* HEADER */
+
+nav{
+    border: 1px solid black;
+}
+
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 60rem;
+}
+
+
+/* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
+nav a{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+/* Logotipo de la barra de navegación */
+.logo{
+    height: 75px;
+    width: 75px;
+    
+}
+
+.barra-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* PORTADA */
+
+#home-hero{
+    height: 550px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.seccion{
+    background-color: aquamarine;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* EXTRAS */
+
+/* Centrar al centro en horizontal y vertical */
+.center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
