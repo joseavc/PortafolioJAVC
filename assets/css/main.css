@@ -1,91 +1,100 @@
 /* GLOBALES */
-html{
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.contenedor{
+.contenedor {
     max-width: 120rem;
     margin: 0 auto 0 auto;
 }
 
-body{
+body {
     font-size: 1.6rem;
 }
 
+
 /* HEADER */
 
-nav{
+nav {
     border: 1px solid black;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.site-header{
+.site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
 
-.site-header.inicio{
+.site-header.inicio {
     background-image: url(../img/header.jpg);
     background-position: center center;
     background-size: cover;
-    height: 100%;
     min-height: 60rem;
 }
 
 
 /* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
-nav a{
+
+nav a {
+    font-family: sans-serif;
     font-size: 20px;
     color: #fff;
-    padding: 20px 10px;
     text-decoration: none;
 }
 
+
 /* Logotipo de la barra de navegación */
-.logo{
+
+.logo {
     height: 75px;
     width: 75px;
-    
 }
 
-.barra-header{
+.barra-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border: 1px solid black;
 }
 
 
 /* PORTADA */
 
-#home-hero{
+#home-hero {
     height: 550px;
     width: 100%;
     background-color: yellow;
 }
 
-.seccion{
+.seccion {
     background-color: aquamarine;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 
-
-
 /* EXTRAS */
 
+
 /* Centrar al centro en horizontal y vertical */
-.center-center{
+
+.center-center {
     display: flex;
     align-items: center;
     justify-content: center;
