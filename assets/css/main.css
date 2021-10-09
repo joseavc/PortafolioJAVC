@@ -23,7 +23,11 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+h2{
+    font-size: 3.4rem;
 }
 
 
@@ -114,6 +118,7 @@ nav a:last-of-type{
 }
 
 #contenido-portada{
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -131,6 +136,53 @@ nav a:last-of-type{
     margin-top: 2rem;
     margin-bottom: 2rem;
 } */
+
+
+
+/* Seccion 2 */
+
+.titulo-seccion{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+
+.titulo-seccion h2{
+    margin: 3rem 0;
+}
+
+.grid-container{
+    background-color: grey;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 350px 350px;
+    row-gap: 15px;
+    column-gap: 15px;
+    
+}
+
+.perfil-card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil-card a{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.perfil-card img{
+    width: 30rem;
+}
 
 
 /* EXTRAS */
