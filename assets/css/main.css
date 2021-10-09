@@ -30,7 +30,6 @@ body {
 
 nav {
     border: 1px solid black;
-    width: 60rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +49,16 @@ nav {
 
 
 /* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
-
 nav a {
     font-family: sans-serif;
     font-size: 20px;
+    padding-right: 4rem;
     color: #fff;
     text-decoration: none;
+}
+
+nav a:last-of-type{
+    padding-right: 0; 
 }
 
 
@@ -77,16 +80,36 @@ nav a {
 /* PORTADA */
 
 #home-hero {
-    height: 550px;
+    /* height: 50vh; */
     width: 100%;
     background-color: yellow;
+    padding: 0 15px 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.seccion {
+#home-hero h1{
+    font-size: 4rem;
+    color:blueviolet;
+}
+
+#home-hero p{
+    font-size: 2rem;
+}
+
+#home-hero img{
+    width: 40rem;
+
+}
+
+/* .seccion {
     background-color: aquamarine;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
+} */
 
 
 /* EXTRAS */
