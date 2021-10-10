@@ -43,7 +43,7 @@ nav {
 
 .site-header {
     background-color: #333333;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0;
 }
 
 .site-header.inicio {
@@ -120,16 +120,16 @@ nav a:last-of-type{
 #contenido-portada{
     font-family: 'Open Sans', sans-serif;
     height: 100%;
+    
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: flex-end;
 }
 
 #contenido-portada img{
     width: 40rem;
     height: 40rem;
 
-    align-self: center;
+    
 }
 /* .seccion {
     background-color: aquamarine;
@@ -185,11 +185,7 @@ nav a:last-of-type{
 }
 
 
-/* EXTRAS */
-
-
 /* Centrar al centro en horizontal y vertical */
-
 .center-center {
     display: flex;
     align-items: center;
