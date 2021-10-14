@@ -25,27 +25,31 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 1.6rem;
+    background-color: #ededed;
 }
 
-h1{
+h1 {
     font-size: 5.8rem;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 3.4rem;
     font-weight: 400;
 }
 
-h3{
+h3 {
     font-size: 3rem;
     font-weight: 300;
 }
 
-p{
+p {
     font-weight: 400;
 }
 
+.bg-color {
+    background-color: #ededed;
+}
 
 
 /* HEADER */
@@ -72,6 +76,7 @@ nav {
 
 
 /* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
+
 nav a {
     font-size: 2.8rem;
     padding-right: 4rem;
@@ -79,8 +84,8 @@ nav a {
     text-decoration: none;
 }
 
-nav a:last-of-type{
-    padding-right: 0; 
+nav a:last-of-type {
+    padding-right: 0;
 }
 
 
@@ -96,13 +101,12 @@ nav a:last-of-type{
     align-items: center;
 }
 
-.titulo-portada{
+.titulo-portada {
     font-size: 3rem;
     color: white;
 }
 
-
-.contenido-header{
+.contenido-header {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -110,53 +114,52 @@ nav a:last-of-type{
 }
 
 
-
-
 /* Seccion 2 */
 
-.titulo-seccion{
+.titulo-seccion {
     text-align: center;
     line-height: 2;
     margin: 3rem 0;
-
-    
 }
 
-.grid-container{
+.grid-container {
     background-color: grey;
-
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 29rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     row-gap: 15px;
     column-gap: 15px;
-    
 }
 
-.perfil-card{
-    border-radius: 5rem;
+.gc {
+    display: grid;
+}
+
+.perfil-card {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
-
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template: 22rem 4fr 1fr / auto;
 }
 
-.perfil-card a{
+.perfil-card a {
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.perfil-card img{
-    width: 30rem;
+.perfil-card img {
+    width: 100%;
+    height: 22rem;
 }
 
+.perfil-card-content {
+    padding-left: 1.6rem;
+    padding: 0.5rem 0 0 1.6rem;
+}
 
-
-
-
-
+.publish-date {
+    font-size: 1.625rem;
+    color: #686869;
+    padding: 0.5rem 0 1.6rem 1.6rem;
+}
