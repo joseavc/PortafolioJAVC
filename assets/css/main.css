@@ -22,20 +22,39 @@ html {
 }
 
 body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     font-size: 1.6rem;
-    /* font-family: 'Open Sans', sans-serif; */
+    background-color: #ededed;
 }
 
-h2{
+h1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+}
+
+h2 {
     font-size: 3.4rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+}
+
+.bg-color {
+    background-color: #ededed;
 }
 
 
-/* PORTADA */
 /* HEADER */
 
 nav {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +62,7 @@ nav {
 
 .site-header {
     background-color: #333333;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0;
 }
 
 .site-header.inicio {
@@ -56,152 +75,93 @@ nav {
 
 
 /* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
+
 nav a {
-    font-size: 20px;
+    font-size: 2.8rem;
     padding-right: 4rem;
     color: #fff;
     text-decoration: none;
 }
 
-nav a:last-of-type{
-    padding-right: 0; 
+nav a:last-of-type {
+    padding-right: 0;
 }
 
 
 /* Logotipo de la barra de navegación */
 
 .logo {
-    height: 75px;
-    width: 75px;
+    width: 11rem;
 }
 
 .barra-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
 
-
-
-#home-hero {
-    /* height: 50vh; */
-    width: 100%;
-    background-color: yellow;
-    padding: 0 15px 0 15px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.titulo-portada {
+    font-size: 3rem;
+    color: white;
 }
 
-#home-hero h1{
-    font-size: 4rem;
-    color:blueviolet;
-}
-
-#home-hero p{
-    font-size: 2rem;
-}
-
-#home-hero img{
-    width: 40rem;
-
-}
-
-.contenido-header{
+.contenido-header {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-#contenido-portada{
-    font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#contenido-portada img{
-    width: 40rem;
-    height: 40rem;
-
-    align-self: center;
-}
-/* .seccion {
-    background-color: aquamarine;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-} */
-
 
 
 /* Seccion 2 */
 
-.titulo-seccion{
-    font-family: 'Lato', sans-serif;
+.titulo-seccion {
     text-align: center;
     line-height: 2;
-}
-
-.titulo-seccion h2{
     margin: 3rem 0;
 }
 
-.grid-container{
-    background-color: grey;
-
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 350px 350px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     row-gap: 15px;
     column-gap: 15px;
-    
 }
 
-.perfil-card{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+.gc {
+    display: grid;
 }
 
-.perfil-card a{
+.perfil-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template: 22rem 4fr 1fr / auto;
+}
+
+.perfil-card:hover {
+    box-shadow: 0 0 6px #023047;
+}
+
+.perfil-card a {
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-.perfil-card img{
-    width: 30rem;
+.perfil-card img {
+    width: 100%;
+    height: 22rem;
 }
 
-
-/* EXTRAS */
-
-
-/* Centrar al centro en horizontal y vertical */
-
-.center-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.perfil-card-content {
+    padding-left: 1.6rem;
+    padding: 0.5rem 0 0 1.6rem;
 }
 
-#texto-portada{
-    font-size: 3rem;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.publish-date {
+    font-size: 1.625rem;
+    color: #686869;
+    padding: 0.5rem 0 1.6rem 1.6rem;
 }
-
