@@ -1,0 +1,13 @@
+@mixin container-p($height, $width, $bg-color, $justify-content){
+    height: $height;
+    width: $width;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+    
+}
+
+.container-h{
+    @include container-p(100%, 100%, #fff, center)
+}

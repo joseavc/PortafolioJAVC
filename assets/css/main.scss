@@ -1,0 +1,188 @@
+@import 'variables';
+@import 'anidacion';
+@import 'mixins';
+
+nav{
+    display: flex;
+    justify-content: $sb;
+    align-items: center;
+
+    a{
+        font-size: 2.8rem;
+        padding-right: $number;
+        color: $f-color;
+        text-decoration: none;
+
+        &:last-of-type{
+            padding-right: 0;
+        }
+    }
+}
+
+/* GLOBALES */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+    background-color: #ededed;
+}
+
+h1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+}
+
+.bg-color {
+    background-color: #ededed;
+}
+
+
+/* HEADER */
+
+// nav {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+
+/* Todas las etiquetas <a> que esten dentro de la etiqueta <nav> */
+
+// nav a {
+//     font-size: 2.8rem;
+//     padding-right: 4rem;
+//     color: #fff;
+//     text-decoration: none;
+// }
+
+// nav a:last-of-type {
+//     padding-right: 0;
+// }
+
+
+/* Logotipo de la barra de navegación */
+
+.logo {
+    width: 11rem;
+}
+
+.barra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-portada {
+    font-size: 3rem;
+    color: white;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Seccion 2 */
+
+.titulo-seccion {
+    text-align: center;
+    line-height: 2;
+    margin: 3rem 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.gc {
+    display: grid;
+}
+
+.perfil-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template: 22rem 4fr 1fr / auto;
+}
+
+.perfil-card:hover {
+    box-shadow: 0 0 6px #023047;
+}
+
+.perfil-card a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.perfil-card img {
+    width: 100%;
+    height: 22rem;
+}
+
+.perfil-card-content {
+    padding-left: 1.6rem;
+    padding: 0.5rem 0 0 1.6rem;
+}
+
+.publish-date {
+    font-size: 1.625rem;
+    color: #686869;
+    padding: 0.5rem 0 1.6rem 1.6rem;
+}
